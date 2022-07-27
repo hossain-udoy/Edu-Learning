@@ -1,0 +1,71 @@
+/* carosel css */
+.carousel-item::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    top: 0;
+    background: #000;
+    opacity: 0.6;
+
+
+}
+
+.carousel-caption h1 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.carousel-caption {
+    bottom: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+
+/* media querey */
+
+@media only screen and (max-width: 576px) {
+    .carousel-caption {
+        bottom: 20px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .carousel-caption h1 {
+        font-size: 20px;
+        font-weight: 700;
+    }
+
+    .carousel-caption p {
+        text-align: center;
+        margin-right: 10px;
+        white-space: nowrap;
+        width: 200px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .carousel-indicators {
+        display: none;
+    }
+}
+
+@media only screen and (min-width:590px)and (max-width:992px) {
+    .carousel-caption {
+        bottom: 10px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .carousel-caption h1 {
+        font-size: 25px;
+        font-weight: 700;
+    }
+
+    .carousel-caption p {
+        font-size: 10px;
+    }
+}
